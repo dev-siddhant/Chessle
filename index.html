@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chesssle - Chess Academy</title>
+    <meta name="description" content="Chesssle is a premier chess academy offering courses for all skill levels. Learn from expert coach Siddhant Adhikari.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add favicon -->
+    <link rel="icon" href="assets/images/chess-logo.png" type="image/png">
+</head>
+<body class="light-mode">
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container">
+            <div class="logo">
+                <a href="#home">
+                    <span class="logo-text">Chess<span class="highlight">sle</span></span>
+                </a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+                </ul>
+                <div class="theme-toggle">
+                    <img src="assets/icons/light-mode.svg" alt="Light Mode" id="light-mode-icon" class="hidden">
+                    <img src="assets/icons/dark-mode.svg" alt="Dark Mode" id="dark-mode-icon">
+                </div>
+                <div class="mobile-menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-content">
+            <h1 class="animate-on-scroll">Master the Game of Kings</h1>
+            <p class="animate-on-scroll">Elevate your chess skills with personalized coaching from experts</p>
+            <a href="#courses" class="btn-primary animate-on-scroll">Explore Courses</a>
+        </div>
+        <div class="hero-overlay"></div>
+        <div id="particles-js"></div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">About Us</h2>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <img src="assets/images/chess-pieces.jpg" alt="Chess pieces arranged strategically">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>Our Mission</h3>
+                    <p>At Chesssle Academy, we believe that chess is more than just a game—it's a powerful tool for developing critical thinking, patience, and strategic planning skills. Our mission is to make chess education accessible to everyone, from beginners to advanced players.</p>
+                    <p>We focus on personalized instruction that adapts to your unique learning style and pace, ensuring you make steady progress and enjoy the journey of chess mastery.</p>
+                </div>
+            </div>
+            <div class="coach-profile animate-on-scroll">
+                <div class="coach-image">
+                    <img src="assets/images/chess-coach.jpg" alt="Coach Siddhant Adhikari">
+                </div>
+                <div class="coach-info">
+                    <h3>Meet Your Coach</h3>
+                    <h4>Siddhant Adhikari</h4>
+                    <p>With a Chess.com rating of approximately 2000, Coach Siddhant brings a wealth of knowledge and experience to his teaching. His patient approach and deep understanding of chess principles make complex concepts accessible to students of all levels.</p>
+                    <div class="coach-social">
+                        <a href="https://techhub.social/@curious" target="_blank" rel="noopener" aria-label="Mastodon Profile">
+                            <img src="assets/icons/mastodon.svg" alt="Mastodon" class="social-icon">
+                        </a>
+                        <a href="https://github.com/devsiddhant" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                            <img src="assets/icons/github.svg" alt="GitHub" class="social-icon">
+                        </a>
+                        <a href="" target="_blank" rel="noopener" aria-label="Chess.com Profile">
+                            <img src="assets/icons/chesscom.svg" alt="Chess.com" class="social-icon">
+                        </a>
+                        <a href="" target="_blank" rel="noopener" aria-label="Lichess Profile">
+                            <img src="assets/icons/lichess.svg" alt="Lichess" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Our Courses</h2>
+            <div class="course-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="beginner">Beginner</button>
+                <button class="filter-btn" data-filter="intermediate">Intermediate</button>
+                <button class="filter-btn" data-filter="advanced">Advanced</button>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card animate-on-scroll" data-category="beginner">
+                    <div class="course-image">
+                        <img src="assets/images/chess-beginner.jpg" alt="Chess Fundamentals Course">
+                    </div>
+                    <div class="course-details">
+                        <h3>Chess Fundamentals</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Beginner</span>
+                            <span class="course-duration">8 Weeks</span>
+                        </div>
+                        <p>Learn the basics of chess, from piece movements to fundamental strategies that will set you up for success.</p>
+                        <a href="#contact" class="btn-secondary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" data-category="intermediate">
+                    <div class="course-image">
+                        <img src="assets/images/chess-strategy.jpg" alt="Tactical Mastery Course">
+                    </div>
+                    <div class="course-details">
+                        <h3>Tactical Mastery</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-duration">10 Weeks</span>
+                        </div>
+                        <p>Elevate your game with advanced tactical patterns, combinations, and middle game strategy.</p>
+                        <a href="#contact" class="btn-secondary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" data-category="intermediate">
+                    <div class="course-image">
+                        <img src="assets/images/chess-opening.png" alt="Opening Theory Course">
+                    </div>
+                    <div class="course-details">
+                        <h3>Opening Theory</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Intermediate</span>
+                            <span class="course-duration">6 Weeks</span>
+                        </div>
+                        <p>Master the most powerful opening systems and build a versatile opening repertoire.</p>
+                        <a href="#contact" class="btn-secondary">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card animate-on-scroll" data-category="advanced">
+                    <div class="course-image">
+                        <img src="assets/images/chess-endgame.jpg" alt="Endgame Mastery Course">
+                    </div>
+                    <div class="course-details">
+                        <h3>Endgame Mastery</h3>
+                        <div class="course-meta">
+                            <span class="course-level">Advanced</span>
+                            <span class="course-duration">8 Weeks</span>
+                        </div>
+                        <p>Learn critical endgame techniques that will help you convert advantages and save difficult positions.</p>
+                        <a href="#contact" class="btn-secondary">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Gallery</h2>
+            <div class="gallery-filters animate-on-scroll">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="training">Training</button>
+                <button class="filter-btn" data-filter="tournaments">Tournaments</button>
+                <button class="filter-btn" data-filter="coaching">Coaching</button>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item animate-on-scroll" data-category="training">
+                    <img src="assets/images/chess-training.jpg" alt="Chess training session">
+                    <div class="gallery-overlay">
+                        <h3>Advanced Training</h3>
+                        <p>Intensive training sessions for competitive players</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="tournaments">
+                    <img src="assets/images/chess-tournament.png" alt="Chess tournament">
+                    <div class="gallery-overlay">
+                        <h3>Championship Tournament</h3>
+                        <p>Annual championship with players from across the country</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="coaching">
+                    <img src="assets/images/chess-classroom.png" alt="Chess classroom">
+                    <div class="gallery-overlay">
+                        <h3>Group Coaching</h3>
+                        <p>Interactive group lessons for beginners</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="tournaments">
+                    <img src="assets/images/chess-trophy.jpg" alt="Chess trophy">
+                    <div class="gallery-overlay">
+                        <h3>Championship Awards</h3>
+                        <p>Recognizing excellence in chess achievements</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="training">
+                    <img src="assets/images/chess-analysis.jpg" alt="Chess analysis">
+                    <div class="gallery-overlay">
+                        <h3>Game Analysis</h3>
+                        <p>Deep analysis of grandmaster games</p>
+                    </div>
+                </div>
+                <div class="gallery-item animate-on-scroll" data-category="coaching">
+                    <img src="assets/images/young-player.jpg" alt="Young chess player">
+                    <div class="gallery-overlay">
+                        <h3>Youth Program</h3>
+                        <p>Specialized coaching for young chess prodigies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title animate-on-scroll">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3>Get in Touch</h3>
+                    <p>Ready to start your chess journey? Contact Coach Siddhant to discuss your goals and find the right program for you.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <a href="/cdn-cgi/l/email-protection#a4c0c1d2d7cdc0c0ccc5cad0e4d4d6cbd0cbcac9c5cdc88ac7cbc9"><span class="__cf_email__" data-cfemail="6e0a0b181d070a0a060f001a2e1e1c011a0100030f0702400d0103">[email&#160;protected]</span></a>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Virtual lessons available worldwide</p>
+                        </div>
+                        <div class="social-media">
+                            <a href="https://techhub.social/@curious" target="_blank" rel="noopener" aria-label="Mastodon Profile">
+                                <img src="assets/icons/mastodon.svg" alt="Mastodon" class="social-icon">
+                            </a>
+                            <a href="https://github.com/devsiddhant" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                                <img src="assets/icons/github.svg" alt="GitHub" class="social-icon">
+                            </a>
+                            <a href="" target="_blank" rel="noopener" aria-label="Chess.com Profile">
+                                <img src="assets/icons/chesscom.svg" alt="Chess.com" class="social-icon">
+                            </a>
+                            <a href="" target="_blank" rel="noopener" aria-label="Lichess Profile">
+                                <img src="assets/icons/lichess.svg" alt="Lichess" class="social-icon">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form animate-on-scroll">
+                    <form id="contactForm" action="https://formsubmit.co/el/cumihi" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message"></span>
+                        </div>
+                        <button type="submit" class="btn-primary">Send Message</button>
+                    </form>
+                    <div class="form-success">
+                        <div class="checkmark-circle">
+                            <div class="checkmark draw"></div>
+                        </div>
+                        <h3>Message Sent!</h3>
+                        <p>Thank you for reaching out. We'll get back to you soon.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">Chess<span class="highlight">sle</span></span>
+                    <p>Elevating Chess Mastery</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection#67030211140e03030f060913271715081308090a060e0b4904080a"><span class="__cf_email__" data-cfemail="89edecfffae0edede1e8e7fdc9f9fbe6fde6e7e4e8e0e5a7eae6e4">[email&#160;protected]</span></a></p>
+                    <div class="footer-social">
+                        <a href="https://techhub.social/@curious" target="_blank" rel="noopener" aria-label="Mastodon Profile">
+                            <img src="assets/icons/mastodon.svg" alt="Mastodon" class="social-icon">
+                        </a>
+                        <a href="https://github.com/devsiddhant" target="_blank" rel="noopener" aria-label="GitHub Profile">
+                            <img src="assets/icons/github.svg" alt="GitHub" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chesssle Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chess Board Easter Egg -->
+    <div id="chessboardEasterEgg" class="chessboard-container">
+        <div class="chessboard-header">
+            <h3>Interactive Chessboard</h3>
+            <button id="closeChessboard">&times;</button>
+        </div>
+        <div id="chessboard" class="chessboard"></div>
+        <div class="chessboard-footer">
+            <p>Move pieces by clicking and dragging</p>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
